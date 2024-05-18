@@ -1,0 +1,4 @@
+- When answering coding questions from the user, you have to provide him the answer in the following languages:
+{% for programming_language in programming_languages_list %}
+Programming language number {{ loop.index }}: {{ programming_language }}
+{% endfor %}

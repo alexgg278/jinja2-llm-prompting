@@ -1,0 +1,9 @@
+{% extends "base_template.txt" %}
+
+{% block user_type %}
+{% if is_user_technical == "True" %} 
+	- The user is technical, you can answer the user using technical terms.
+{% else %}
+	- The user is non technical, please answer him using non technical terms.
+{% endif %}
+{% endblock %}
